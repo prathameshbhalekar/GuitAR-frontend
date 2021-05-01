@@ -1,0 +1,83 @@
+@media only screen and (max-width: 500px) {
+  .playsong__promt_area {
+    display: none !important;
+  }
+}
+
+body {
+  background-color: #181818!important;
+}
+
+.playsong__cam {
+  display: none;
+}
+
+.lyrics {
+  position: fixed;
+  right: 50px;
+  left: auto;
+  bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.playsong__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  top: 0%;
+  justify-content: center;
+  align-items: center;
+}
+.playsong__canvas {
+  height: 95vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+}
+
+.playsong__promt_area {
+  pointer-events: none;
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.play {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 15px 0px 15px 30px;
+  border-color: transparent transparent transparent rgb(255, 255, 255);
+  transition: all 0ms;
+  opacity: 0.8;
+}
+
+.pause {
+  border-style: double;
+  border-width: 0px 0px 0px 25px;
+}
+
+.play__pause__button__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px 15px 18px;
+  border-radius: 50px;
+  background-color: #1db954;
+  position: fixed;
+  left: 50%;
+  margin-left: -3%;
+  bottom: 1%;
+  transition: all 100ms;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+}
+
+.play__pause__button__container:hover {
+  transform: scale(1.1);
+}

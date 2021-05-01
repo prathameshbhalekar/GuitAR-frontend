@@ -1,0 +1,68 @@
+@media only screen and (max-height: 600px) {
+    
+    .loginpage .loginpage__icon{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .loginpage .loginpage__container{
+        background-color: #181818;
+        width: 80%;
+        text-align: center;
+     }
+
+}
+
+.loginpage {
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 200px 200px 0 rgba(0, 0, 0, 0.7), 0 200px 200px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+.loginpage__container{
+    transition: 500ms;
+    background-color: #181818;
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; 
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.7), 0 20px 20px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.google__icon{
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+
+
+.loginpage__icon{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.loginpage__container > button{
+    margin-top: 15px;
+    background-color: #1DB954;
+    text-transform: inherit;
+    width: 70%;
+}
+#signintext{
+    color: #ffffff!important;
+}
+.loginpage .login__text{
+    margin-top: 10%;
+}
