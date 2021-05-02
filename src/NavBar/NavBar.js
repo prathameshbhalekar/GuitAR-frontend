@@ -2,7 +2,7 @@ import React, {useCallback} from 'react'
 import './NavBar.css'
 import SettingsIcon from '@material-ui/icons/Settings';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
-import BookmarksIcon from '@material-ui/icons/Bookmarks';
+import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 import image from './../images/GuitAR.png'
 import {useSelector} from 'react-redux'
 import { Avatar } from '@material-ui/core';
@@ -12,6 +12,7 @@ export default function NavBar() {
     const history = useHistory();
     const openAddGuitar = useCallback(() => history.push('/AddGuitar'), [history]);
     const openSettings = useCallback(() => history.push('/Settings'), [history]);
+    const openLearnTab = useCallback(() => history.push('/LearnTabs'), [history]);
     const user = useSelector(state => state.isLoggedIn ).user
 
     return (
@@ -32,9 +33,9 @@ export default function NavBar() {
             </li>   
             
             <li className = "nav-item">
-                <a href = '#' className = "nav-link">
-                    <BookmarksIcon className = "link-icon"/>
-                    <span className = 'link-text'>My Library</span>
+                <a onClick = {openLearnTab} className = "nav-link">
+                    <ImportContactsIcon className = "link-icon"/>
+                    <span className = 'link-text'>Learn Tabs</span>
                 </a>    
             </li>
 
