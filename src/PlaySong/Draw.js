@@ -15,7 +15,7 @@ export default (canvas, video, ptr, list, textColor, strokeColor) => {
   ctx.drawImage(video.video, 0, 0, canvas.width, canvas.height);
   ctx.scale(-1, 1);
   ctx.translate(-canvas.width, 0);
-
+  ctx.lineWidth = 5;
   const detector = new AR.Detector();
   var markers = detector.detect(ctx.getImageData(0, 0, 1280, 720));
 
