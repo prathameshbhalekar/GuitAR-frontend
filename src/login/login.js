@@ -88,7 +88,7 @@ function Login() {
                  color = "primary" 
                  variant = "contained"
                  onClick = {signIn}
-                 startIcon = {<img src = {glogo} className = "google__icon"/>}
+                 startIcon = {<img src = {glogo} className = "google__icon" alt = "google logo"/>}
                  ><p id = "signintext">Sign In With Google</p></Button>
             </div>
         </div>

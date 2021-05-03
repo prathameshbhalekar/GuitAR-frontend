@@ -3,7 +3,7 @@ import SplitLine from './../Utils/SplitLine'
 import Map from './../Utils/Map'
 const AR = require('js-aruco').AR;
 
-export default (canvas, video, ptr, list, textColor, strokeColor) => {
+const draw =  (canvas, video, ptr, list, textColor, strokeColor) => {
   var ctx = canvas.getContext("2d", { alpha: false });
 
   canvas.width = video.video.videoWidth;
@@ -114,3 +114,5 @@ export default (canvas, video, ptr, list, textColor, strokeColor) => {
 
   ctx.stroke();
 };
+
+export default draw

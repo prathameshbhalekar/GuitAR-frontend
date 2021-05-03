@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Webcam from "react-webcam";
 import axios from "./../axios";
 import "./LearnTab.css";
@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import tabs from "./../Utils/Tabs";
 import Promt from "./../addGuitar/Promt";
 import Image from "./../images/finger_coding.jpg";
-import Draw from "./Draw";
+import Draw from "./../PlaySong/Draw";
 import RotateDevice from "./../animations/RotateDevice/RotateDevice";
 
 export default function LearnTab(props) {
