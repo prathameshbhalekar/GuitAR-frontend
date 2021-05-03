@@ -65,9 +65,9 @@ const AddGuitar = (props) => {
           setIsParallel(true);
           ctx.fillStyle = "red";
           var corners = markers[0].corners;
-
+          var result
           if (p1.current !== null) {
-            var result = Map(
+            result = Map(
               corners[1].x,
               corners[1].y,
               corners[0].x,
@@ -79,7 +79,7 @@ const AddGuitar = (props) => {
           }
 
           if (p2.current !== null) {
-            var result = Map(
+            result = Map(
               corners[1].x,
               corners[1].y,
               corners[0].x,
@@ -91,7 +91,7 @@ const AddGuitar = (props) => {
           }
 
           if (p3.current !== null) {
-            var result = Map(
+            result = Map(
               corners[1].x,
               corners[1].y,
               corners[0].x,
@@ -103,7 +103,7 @@ const AddGuitar = (props) => {
           }
 
           if (p4.current !== null) {
-            var result = Map(
+            result = Map(
               corners[1].x,
               corners[1].y,
               corners[0].x,

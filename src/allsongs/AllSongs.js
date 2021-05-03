@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useEffect } from "react";
+import React, { useRef, useCallback } from "react";
 import "./AllSongs.css";
 import TopBar from "./topbar/topbar";
 import SongsSearch from "./SongsSearch";

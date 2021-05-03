@@ -9,7 +9,7 @@ export default (A, B, C, D) => {
        
     var determinant = a1*b2 - a2*b1;
        
-    if (determinant == 0)
+    if (determinant === 0)
     {
         return {x: -1, y: -1}
     }

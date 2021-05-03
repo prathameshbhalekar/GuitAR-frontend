@@ -91,7 +91,7 @@ function Info() {
 
       <div className="info__topv">
         <div className="info__logo__container">
-          <img src={logo} className="info__logo" />
+          <img src={logo} className="info__logo" alt = "logo" />
           <h1 className="info__toptext">Learning Guitar Simplified!</h1>
         </div>
       </div>
@@ -142,7 +142,7 @@ function Info() {
       </div>
 
       <div className="info__bottom">
-        <img src={bottomLogo} />
+        <img src={bottomLogo}  alt = "logo"/>
         <h3>Content & Graphics © 2021 Guit.ar LLC</h3>
       </div>
     </div>

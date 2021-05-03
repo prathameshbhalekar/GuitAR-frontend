@@ -14,7 +14,7 @@ export default function Promt(props) {
         icon = <InfoOutlinedIcon className = 'icon' style = {{color : 'white'}}/>
     
     if(props.img)
-        img  = <img id = "promt__img" src = {props.img}/>
+        img  = <img id = "promt__img" src = {props.img} alt = "prop"/>
     else
         img = null
 

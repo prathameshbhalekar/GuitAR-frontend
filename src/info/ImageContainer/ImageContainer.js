@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import "./ImageContainer.css";
 
 function ImageContainer(props) {
@@ -12,7 +12,7 @@ function ImageContainer(props) {
       }}
     >
       <div className="info__imagecontainer__imagehider">
-        <img className="info__imagecontainer__image" src={image} />
+        <img className="info__imagecontainer__image" src={image} alt = "container"/>
       </div>
       <div className="info__line" />
       <div className="info__text__container">
