@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# GuitAR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GuitAR is an web app which projects the chords for any song from our wide selection on to user's guitar on their screen so that all they have to do is press the highlighted strings to play the song.
 
-## Available Scripts
 
-In the project directory, you can run:
+https://user-images.githubusercontent.com/33856767/116863257-ac54bf00-ac23-11eb-897f-896acec13ef7.mp4
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `yarn test`
+Before working on frontend you will need to set up the backend. You can use our hosted backend or run your own backend for better performance. If you choose to host your own you can find it [here](https://github.com/prathameshbhalekar/GuitAR-Backend).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Fork
 
-### `yarn build`
+Create your own copy of the project on GitHub. You can do this by clicking the Fork button  on the top right corner of the landing page of the repository.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Note: For this you need to install [git](https://git-scm.com/downloads) on your machine
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ git clone https://github.com/YOUR_GITHUB_USER_NAME/GuitAR-frontend
+```
+where YOUR_GITHUB_USER_NAME is your GitHub handle.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Set Backend Base URL
+Note: Skip this step if you are using our backend.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Go to `src/axios.js`
+2. Replace baseURL to your own URL.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```javascript
+import axios from "axios"
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+const instance = axios.create({
+    baseURL: "YOUR_BACKEND_URL_HERE"
+})
 
-## Learn More
+export default instance
+```
+### Run the app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Now you can run GuitAR React application by following the steps below:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. install dependencies by running the command below
 
-### Code Splitting
+```
+$ npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. run the app using the command below
 
-### Analyzing the Bundle Size
+```
+$ npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. go to the browser on http://localhost:3000/
 
-### Making a Progressive Web App
+## ScreenShots
+![image](https://user-images.githubusercontent.com/33856767/116862600-a3172280-ac22-11eb-8653-3ab70cedb91f.png)
+![login](https://user-images.githubusercontent.com/33856767/116862520-81b63680-ac22-11eb-8e26-822bccebcc74.png)
+![allsongs](https://user-images.githubusercontent.com/33856767/116862500-79f69200-ac22-11eb-958b-2e2cf8ea5ac1.png)
+![setup](https://user-images.githubusercontent.com/33856767/116862531-867aea80-ac22-11eb-8767-9545077b11d7.png)
+![Learning Experience](https://user-images.githubusercontent.com/33856767/116862512-7e22af80-ac22-11eb-90b7-06d93e77358e.png)
+![settings](https://user-images.githubusercontent.com/33856767/116862528-84b12700-ac22-11eb-8df7-edcefd4f9488.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+The project is licensed under the MIT License. Learn more about it in the [LICENCE](https://github.com/prathameshbhalekar/GuitAR-frontend/blob/main/LICENSE) file.
