@@ -32,8 +32,12 @@ jobs:
       
     - name: Build project
       run: npm run build
+      env:
+        CI: false
     - name: Run project
       run: npm test
+      env:
+        CI: false
   
   deploy:
     runs-on: ubuntu-latest
