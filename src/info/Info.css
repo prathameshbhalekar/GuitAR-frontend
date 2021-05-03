@@ -113,16 +113,26 @@
 }
 
 .getstarted__button{
-  background-color: rgba(29, 185, 84, 0.6);
+  background-color: rgba(29, 185, 84, 01);
   position: fixed;
+  color: white;
   bottom: 20px;
   right: 20px;
   z-index: 10;
   display: flex;
   padding: 10px;
   border-radius: 30px;
-  color: rgb(255, 255, 255);
   transition: all 800ms;
+}
+
+.getstarted__button h3{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.getstarted__button:hover h3{
+  color: white;
+  margin-left: 5px;
 }
 
 .getstarted__button h3{

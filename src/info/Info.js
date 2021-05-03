@@ -84,7 +84,7 @@ function Info() {
 
       <a href = "Home">
         <div className="getstarted__button">
-          <PlayArrowIcon/>
+          <PlayArrowIcon fontSize = 'large'/>
           <h3>GET STARTED</h3>
         </div>
       </a>
@@ -143,7 +143,7 @@ function Info() {
 
       <div className="info__bottom">
         <img src={bottomLogo} />
-        <h3>Content & Graphics © 2020 Guit.ar LLC</h3>
+        <h3>Content & Graphics © 2021 Guit.ar LLC</h3>
       </div>
     </div>
   );
