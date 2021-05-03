@@ -14,7 +14,8 @@ import setting from "./../images/setting.svg";
 import music from "./../images/music.svg";
 import rocket from "./../images/rocket.svg";
 import bottomLogo from "./../images/vertical_logo.png";
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import PlayArrowIcon from "@material-ui/icons/PlayArrow";
+import ReactPlayer from "react-player";
 
 function Info() {
   gsap.registerPlugin(ScrollTrigger);
@@ -81,17 +82,16 @@ function Info() {
 
   return (
     <div className="info">
-
-      <a href = "Home">
+      <a href="Home">
         <div className="getstarted__button">
-          <PlayArrowIcon fontSize = 'large'/>
+          <PlayArrowIcon fontSize="large" />
           <h3>GET STARTED</h3>
         </div>
       </a>
 
       <div className="info__topv">
         <div className="info__logo__container">
-          <img src={logo} className="info__logo" alt = "logo" />
+          <img src={logo} className="info__logo" alt="logo" />
           <h1 className="info__toptext">Learning Guitar Simplified!</h1>
         </div>
       </div>
@@ -139,10 +139,17 @@ function Info() {
           <Steps img={music} text="Find Your Favourite Music" />
           <Steps img={rocket} text="Take Off..." />
         </div>
+
+        <div className="videoplayer_container">
+          <ReactPlayer
+            className="info__videoplayer"
+            url="https://vimeo.com/544604493"
+          />
+        </div>
       </div>
 
       <div className="info__bottom">
-        <img src={bottomLogo}  alt = "logo"/>
+        <img src={bottomLogo} alt="logo" />
         <h3>Content & Graphics © 2021 Guit.ar LLC</h3>
       </div>
     </div>
