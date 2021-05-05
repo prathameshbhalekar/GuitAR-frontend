@@ -1,11 +1,11 @@
 import React, { useRef, useCallback } from "react";
 import "./AllSongs.css";
-import TopBar from "./topbar/topbar";
-import SongsSearch from "./SongsSearch";
+import TopBar from "./../../components/TopBar/topbar";
+import SongsSearch from "../../hooks/SongsSearch";
 import { useSelector, useDispatch } from "react-redux";
-import actions from "./../actions/index";
-import Loading from "./../animations/loading/loading";
-import songImage from "./../images/music_logo.png";
+import actions from "./../../actions/index";
+import Loading from "./../../animations/loading/loading";
+import songImage from "./../../images/music_logo.png";
 import { Link } from "react-router-dom";
 
 function AllSongs() {

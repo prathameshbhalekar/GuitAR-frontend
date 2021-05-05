@@ -1,8 +1,8 @@
-import AllSongs from "./allsongs/AllSongs";
+import AllSongs from "./views/AllSongs/AllSongs";
 import Login from "./login/login";
 import PlaySong from "./PlaySong/PlaySong";
 import "./App.css";
-import NavBar from "./NavBar/NavBar";
+import NavBar from "./views/NavBar/NavBar";
 import { useSelector } from "react-redux";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
