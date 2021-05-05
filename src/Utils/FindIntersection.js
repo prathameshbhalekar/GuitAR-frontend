@@ -1,4 +1,4 @@
-export default (A, B, C, D) => {
+const FindIntersection = (A, B, C, D) => {
     var a1 = B.y - A.y;
     var b1 = A.x - B.x;
     var c1 = a1*(A.x) + b1*(A.y);
@@ -20,3 +20,5 @@ export default (A, B, C, D) => {
         return {x: x, y: y};
     }
 }
+
+export default FindIntersection

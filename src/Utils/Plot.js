@@ -1,5 +1,5 @@
 
-export default (origin_x, origin_y , x_axis_x, x_axis_y, x_val, y_val) => {
+const Plot = (origin_x, origin_y , x_axis_x, x_axis_y, x_val, y_val) => {
 
     const theta =  Math.atan((x_axis_y - origin_y) / (x_axis_x - origin_x + 0.000000001))
 
@@ -25,3 +25,5 @@ export default (origin_x, origin_y , x_axis_x, x_axis_y, x_val, y_val) => {
         n_ratio : n / len
     }
 }
+
+export default Plot

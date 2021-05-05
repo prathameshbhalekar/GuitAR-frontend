@@ -28,7 +28,7 @@ where YOUR_GITHUB_USER_NAME is your GitHub handle.
 ### Set Backend Base URL
 Note: Skip this step if you are using our backend.
 
-1. Go to `src/axios.js`
+1. Go to `src/Utils/axios.js`
 2. Replace baseURL to your own URL.
 
 ```javascript

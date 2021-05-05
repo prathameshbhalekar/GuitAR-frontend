@@ -7,7 +7,7 @@ import Promt from "../../components/Promt/Promt";
 import tutorial from "./../../images/tutorial.jpg";
 import Button from "@material-ui/core/Button";
 import NavigateNextSharpIcon from "@material-ui/icons/NavigateNextSharp";
-import axios from "../../axios";
+import axios from "../../Utils/axios";
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import CheckParallel from "../../Utils/CheckParallel";

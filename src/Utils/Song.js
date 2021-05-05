@@ -9,7 +9,7 @@ const Song = (s) => {
         var tab = ""
         var n = s.length;
         while(pos < n){
-            if(s.charAt(pos) == '<')
+            if(s.charAt(pos) === '<')
                 break;
             tab += s.charAt(pos)
             pos++;

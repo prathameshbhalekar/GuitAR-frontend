@@ -1,9 +1,9 @@
-import FindIntersection from './../../Utils/FindIntersection'
-import SplitLine from './../../Utils/SplitLine'
-import Map from './../../Utils/Map'
-const AR = require('js-aruco').AR;
+import FindIntersection from "../Utils/FindIntersection";
+import SplitLine from "../Utils/SplitLine";
+import Map from "../Utils/Map";
+const AR = require("js-aruco").AR;
 
-const draw =  (canvas, video, ptr, list, textColor, strokeColor) => {
+const draw = (canvas, video, ptr, list, textColor, strokeColor) => {
   var ctx = canvas.getContext("2d", { alpha: false });
 
   canvas.width = video.video.videoWidth;
@@ -68,7 +68,9 @@ const draw =  (canvas, video, ptr, list, textColor, strokeColor) => {
     var top = SplitLine(pt1, pt2, 6);
     var bottom = SplitLine(pt4, pt3, 6);
 
-    for (var i = 0; i < top.length; i++) {
+    var i;
+
+    for (i = 0; i < top.length; i++) {
       ctx.beginPath();
       ctx.moveTo(top[i].x, top[i].y);
       ctx.lineTo(bottom[i].x, bottom[i].y);
@@ -80,14 +82,12 @@ const draw =  (canvas, video, ptr, list, textColor, strokeColor) => {
     right.reverse();
     left.reverse();
 
-    for (var i = 0; i < right.length; i++) {
+    for (i = 0; i < right.length; i++) {
       ctx.beginPath();
       ctx.moveTo(right[i].x, right[i].y);
       ctx.lineTo(left[i].x, left[i].y);
       ctx.stroke();
     }
-
-    
 
     if (list) {
       for (var pos = 0; pos < list.length; pos++) {
@@ -115,4 +115,4 @@ const draw =  (canvas, video, ptr, list, textColor, strokeColor) => {
   ctx.stroke();
 };
 
-export default draw
+export default draw;

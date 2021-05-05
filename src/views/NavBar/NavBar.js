@@ -21,10 +21,10 @@ export default function NavBar() {
     <div className="navbar">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a href="#" className="nav__top">
-            <img src={image} className="nav__topicon" />
+          <div className="nav__top">
+            <img src={image} className="nav__topicon" alt = "logo"/>
             <span className="link-text">GuitAR 🚀</span>
-          </a>
+          </div>
         </li>
         <li className="nav-item">
           <div className="nav-link" onClick={openAddGuitar}>

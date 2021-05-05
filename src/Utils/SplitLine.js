@@ -1,4 +1,4 @@
-export default (pt1, pt2, n) => {
+const SplitLine =  (pt1, pt2, n) => {
     var ans = []
     n--;
     for(var i = 0; i <= n; i ++){
@@ -11,3 +11,5 @@ export default (pt1, pt2, n) => {
     }
     return ans
 }
+
+export default SplitLine

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
-import axios from "../../axios";
+import axios from "../../Utils/axios";
 import axiosLib from "axios";
 import CheckIcon from "@material-ui/icons/Check";
 import ClearIcon from "@material-ui/icons/Clear";
