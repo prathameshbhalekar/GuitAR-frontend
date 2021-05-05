@@ -8,7 +8,7 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AddGuitar from "./views/addGuitar/AddGuitar";
 import Settings from "./views/Settings/Settings";
-import Info from "./info/Info";
+import Info from "./views/Info/Info";
 import LearnTab from "./views/learnTab/LearnTab";
 
 function App() {
