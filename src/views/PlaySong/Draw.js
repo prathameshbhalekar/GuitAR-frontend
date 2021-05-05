@@ -1,6 +1,6 @@
-import FindIntersection from './../Utils/FindIntersection'
-import SplitLine from './../Utils/SplitLine'
-import Map from './../Utils/Map'
+import FindIntersection from './../../Utils/FindIntersection'
+import SplitLine from './../../Utils/SplitLine'
+import Map from './../../Utils/Map'
 const AR = require('js-aruco').AR;
 
 const draw =  (canvas, video, ptr, list, textColor, strokeColor) => {

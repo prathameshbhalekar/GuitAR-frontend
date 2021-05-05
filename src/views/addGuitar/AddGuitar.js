@@ -1,17 +1,17 @@
 import React, { useRef, useState, useCallback, useEffect } from "react";
 import Webcam from "react-webcam";
 import "./AddGuitar.css";
-import Map from "./../Utils/Map";
-import Plot from "./../Utils/Plot";
-import Promt from "./Promt";
-import tutorial from "./../images/tutorial.jpg";
+import Map from "../../Utils/Map";
+import Plot from "../../Utils/Plot";
+import Promt from "../../components/Promt/Promt";
+import tutorial from "./../../images/tutorial.jpg";
 import Button from "@material-ui/core/Button";
 import NavigateNextSharpIcon from "@material-ui/icons/NavigateNextSharp";
-import axios from "./../axios";
+import axios from "../../axios";
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import CheckParallel from "./../Utils/CheckParallel";
-import RotateDevice from "./../animations/RotateDevice/RotateDevice";
+import CheckParallel from "../../Utils/CheckParallel";
+import RotateDevice from "../../animations/RotateDevice/RotateDevice";
 
 const AddGuitar = (props) => {
   const user = useSelector((state) => state.isLoggedIn).user;

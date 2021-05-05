@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import Webcam from "react-webcam";
-import axios from "./../axios";
+import axios from "./../../axios";
 import "./LearnTab.css";
 import { useSelector } from "react-redux";
-import tabs from "./../Utils/Tabs";
-import Promt from "./../addGuitar/Promt";
-import Image from "./../images/finger_coding.jpg";
+import tabs from "./../../Utils/Tabs";
+import Promt from "./../../components/Promt/Promt";
+import Image from "./../../images/finger_coding.jpg";
 import Draw from "./../PlaySong/Draw";
-import RotateDevice from "./../animations/RotateDevice/RotateDevice";
+import RotateDevice from "./../../animations/RotateDevice/RotateDevice";
 
 export default function LearnTab(props) {
   const User = useSelector((state) => state.isLoggedIn).user;

@@ -1,15 +1,15 @@
 import AllSongs from "./views/AllSongs/AllSongs";
 import Login from "./views/login/login";
-import PlaySong from "./PlaySong/PlaySong";
+import PlaySong from "./views/PlaySong/PlaySong";
 import "./App.css";
 import NavBar from "./views/NavBar/NavBar";
 import { useSelector } from "react-redux";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import AddGuitar from "./addGuitar/AddGuitar";
+import AddGuitar from "./views/addGuitar/AddGuitar";
 import Settings from "./views/Settings/Settings";
 import Info from "./info/Info";
-import LearnTab from "./learnTab/LearnTab";
+import LearnTab from "./views/learnTab/LearnTab";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.isLoggedIn);
