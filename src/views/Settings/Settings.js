@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
-import axios from "./../axios";
-import axiosLib from "axios"
+import axios from "../../axios";
+import axiosLib from "axios";
 import CheckIcon from "@material-ui/icons/Check";
 import ClearIcon from "@material-ui/icons/Clear";
 import "./Settings.css";
@@ -14,7 +14,7 @@ export default function Settings() {
   const [strokeColor, setStrokeColor] = useState("");
   const [TextCheck, setTextCheck] = useState(true);
   const [strokeCheck, setstrokeCheck] = useState(true);
-  const [SliderValue, setSliderValue] = useState(user.speed)
+  const [SliderValue, setSliderValue] = useState(user.speed);
 
   const TextInput = useRef(null);
   const StrokeInput = useRef(null);
@@ -28,7 +28,7 @@ export default function Settings() {
       } else {
         setStrokeColor(`#${res.data.strokeColor}`);
         setTextColor(`#${res.data.textColor}`);
-        setSliderValue(res.data.speed)
+        setSliderValue(res.data.speed);
         TextInput.current.value = `#${res.data.textColor}`;
         StrokeInput.current.value = `#${res.data.strokeColor}`;
       }
@@ -81,20 +81,20 @@ export default function Settings() {
   };
 
   useEffect(() => {
-    console.log(SliderValue)
+    console.log(SliderValue);
     let cancel;
-    var url = "/api/v1/users/updateSpeed?email=" + user.email + "&speed=" + SliderValue
+    var url =
+      "/api/v1/users/updateSpeed?email=" + user.email + "&speed=" + SliderValue;
     axios({
       method: "PUT",
       url: url,
       cancelToken: new axiosLib.CancelToken((c) => (cancel = c)),
-    })
-      .catch((e) => {
-        if (axiosLib.isCancel(e)) return;
-        alert(e)
-      });
+    }).catch((e) => {
+      if (axiosLib.isCancel(e)) return;
+      alert(e);
+    });
     return () => cancel();
-  }, [SliderValue])
+  }, [SliderValue]);
 
   return (
     <div className="settings__box">
@@ -152,8 +152,17 @@ export default function Settings() {
           className="setting__tile"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.07)" }}
         >
-          <input id="slider" type="range" min="1" max="10" onChange= {(e) => { setSliderValue(e.target.value); }} value= {SliderValue }/>
-          <h3 className = "color__checkbox">{SliderValue}</h3>
+          <input
+            id="slider"
+            type="range"
+            min="1"
+            max="10"
+            onChange={(e) => {
+              setSliderValue(e.target.value);
+            }}
+            value={SliderValue}
+          />
+          <h3 className="color__checkbox">{SliderValue}</h3>
         </div>
       </div>
     </div>

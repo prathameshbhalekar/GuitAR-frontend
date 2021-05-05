@@ -1,12 +1,12 @@
 import React, {useRef, useState, useEffect} from 'react'
 import './login.css'
-import logo from '../images/GuitAR.png'
+import logo from '../../images/GuitAR.png'
 import { Button } from '@material-ui/core';
-import {auth, provider} from "./../firebase"
+import {auth, provider} from "./../../firebase"
 import {useDispatch} from 'react-redux'
-import actions from './../actions/index'
-import axios from './../axios'
-import glogo from './../images/g-logo.png'
+import actions from './../../actions/index'
+import axios from './../../axios'
+import glogo from './../../images/g-logo.png'
 import VantaNet from 'vanta/dist/vanta.net.min.js'
 import * as THREE from 'three'
 

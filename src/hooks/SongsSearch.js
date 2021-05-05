@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "../axios";
-import axiosLib from 'axios'
+import axiosLib from "axios";
 
 export default function useBookSearch(query, pageNumber) {
   const [loading, setLoading] = useState(true);
@@ -15,7 +15,6 @@ export default function useBookSearch(query, pageNumber) {
   }, [query]);
 
   useEffect(() => {
-
     setLoading(true);
     setError(false);
 

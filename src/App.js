@@ -1,5 +1,5 @@
 import AllSongs from "./views/AllSongs/AllSongs";
-import Login from "./login/login";
+import Login from "./views/login/login";
 import PlaySong from "./PlaySong/PlaySong";
 import "./App.css";
 import NavBar from "./views/NavBar/NavBar";
@@ -7,9 +7,9 @@ import { useSelector } from "react-redux";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AddGuitar from "./addGuitar/AddGuitar";
-import Settings from "./Settings/Settings";
+import Settings from "./views/Settings/Settings";
 import Info from "./info/Info";
-import LearnTab from './learnTab/LearnTab'
+import LearnTab from "./learnTab/LearnTab";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.isLoggedIn);
@@ -47,7 +47,7 @@ function App() {
 
   var settings = <Settings />;
 
-  var learnTab = <LearnTab/>;
+  var learnTab = <LearnTab />;
 
   var home = (
     <MuiThemeProvider theme={theme}>
@@ -66,15 +66,17 @@ function App() {
         <Switch>
           <Route path="/PlaySong">{!isLoggedIn.user ? login : playSong}</Route>
 
-          <Route path="/AddGuitar">{!isLoggedIn.user ? login : addGuitar}</Route>
+          <Route path="/AddGuitar">
+            {!isLoggedIn.user ? login : addGuitar}
+          </Route>
 
-          <Route path="/Settings">{!isLoggedIn.user ? login : settings}</Route> 
+          <Route path="/Settings">{!isLoggedIn.user ? login : settings}</Route>
 
           <Route path="/Home">{!isLoggedIn.user ? login : home}</Route>
 
           <Route path="/LearnTabs">{!isLoggedIn.user ? login : learnTab}</Route>
 
-          <Route path="/">{getStarted}</Route> 
+          <Route path="/">{getStarted}</Route>
         </Switch>
       </Router>
     </div>
