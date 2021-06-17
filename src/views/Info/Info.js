@@ -104,26 +104,74 @@ function Info() {
 
       <div className="info__imagelist">
         <ImageContainer color="#F7DF1E" title="Faster Learning" img={speed}>
-          Guit.ar improves learning speed by around 40%. It helps building
-          muscle memory by giving live visual feedback to the user. Visual
-          feedback (VFb) is proven to boost the acquisition and retention stages
-          of motor learning associated with training in a reaching task.
+          <meta
+            name="description"
+            content="Guit.ar improves learning speed by around 40%. Traditionally user 
+            has to look at cords and the count the strings and frets but we 
+            directly project them on the guitar making it much easier and faster. It helps building
+            muscle memory by giving live visual feedback to the user. Visual
+            feedback (VFb) is proven to boost the acquisition and retention stages
+            of motor learning associated with training in a reaching task."
+          />
+          Guit.ar improves learning speed by around 40%. Traditionally user has
+          to look at cords and the count the strings and frets but we directly
+          project them on the guitar making it much easier and faster. It helps
+          building muscle memory by giving live visual feedback to the user.
+          Visual feedback (VFb) is proven to boost the acquisition and retention
+          stages of motor learning associated with training in a reaching task.
         </ImageContainer>
         <ImageContainer color="#DD0031" title="Guitar Gamified" img={game}>
+          <meta
+            name="description"
+            content="Turn your guitar into a musical game using Guit.ar. It turns your
+            guitar into a arcade game where the objective is to strike the
+            highlighted string within particular time. Learn faster and smarter
+            with Guit.ar.GuitAR gamifies guitar into a arcade games where user has to 
+            pluck highlighted cords within a particular time which could provide a 
+            great activity for children without trapping them in a digital world."
+          />
           Turn your guitar into a musical game using Guit.ar. It turns your
           guitar into a arcade game where the objective is to strike the
           highlighted string within particular time. Learn faster and smarter
-          with Guit.ar.
+          with Guit.ar.GuitAR gamifies guitar into a arcade games where user has
+          to pluck highlighted cords within a particular time which could
+          provide a great activity for children without trapping them in a
+          digital world.
         </ImageContainer>
         <ImageContainer color="#61DAFB" title="Skip The Boring" img={time}>
+          <meta
+            name="description"
+            content="Learning Guitar comes with learning lot of redundant stuff before you
+            play any song. Normally a new guitarist has to learn multiple tabs 
+            before they can perform actual songs which can get frustrating.
+             With guitAR, user can directly start playing songs from their 
+             first day. Guit.ar helps you to cut the clutter and get you
+            started with playing interesting music right from the first day."
+          />
           Learning Guitar comes with learning lot of redundant stuff before you
-          play any song. Guit.ar helps you to cut the clutter and get you
-          started with playing interesting music right from the first day.
+          play any song. Normally a new guitarist has to learn multiple tabs
+          before they can perform actual songs which can get frustrating. With
+          guitAR, user can directly start playing songs from their first day.
+          Guit.ar helps you to cut the clutter and get you started with playing
+          interesting music right from the first day.
         </ImageContainer>
         <ImageContainer color="#663399" title="Attract Eyeballs" img={crowd}>
-          Our Innovative solutions improve learning speed and quality making
-          Guit.ar great complement for your music institution. Guit.ar adds
-          charm to you organization attracting more students.
+          <meta
+            name="description"
+            content="GuitAR can be used by various institutes and universities that teach music to 
+            teach their students string instruments while sitting at home especially during
+             lock down. It can also be used as great complement for traditional methods. 
+              Our Innovative solutions improve learning speed and quality making
+              Guit.ar great complement for your music institution. Guit.ar adds
+              charm to you organization attracting more students."
+          />
+          GuitAR can be used by various institutes and universities that teach
+          music to teach their students string instruments while sitting at home
+          especially during lock down. It can also be used as great complement
+          for traditional methods. Our Innovative solutions improve learning
+          speed and quality making Guit.ar great complement for your music
+          institution. Guit.ar adds charm to you organization attracting more
+          students.
         </ImageContainer>
       </div>
 
