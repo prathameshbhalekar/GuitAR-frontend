@@ -13,17 +13,15 @@ import login from "./../../images/login.svg";
 import setting from "./../../images/setting.svg";
 import music from "./../../images/music.svg";
 import rocket from "./../../images/rocket.svg";
+import LearningExperience from "./../../images/Learning Experience.png";
 import bottomLogo from "./../../images/vertical_logo.png";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
+import GetAppIcon from "@material-ui/icons/GetApp";
 import ReactPlayer from "react-player";
 
 function Info() {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    TweenLite.from(".info__topv", 1, {
-      y: -1000,
-      opacity: 0,
-    });
 
     TweenLite.from(".info__imagecontainer", 1, {
       opacity: 0,
@@ -89,6 +87,12 @@ function Info() {
         </div>
       </a>
 
+      <a href="https://guitar-backend.herokuapp.com/api/v1/downloads/Marker">
+        <div className="download__button">
+          <GetAppIcon fontSize="large" />
+        </div>
+      </a>
+
       <div className="info__topv">
         <div className="info__logo__container">
           <img src={logo} className="info__logo" alt="logo" />
@@ -98,10 +102,28 @@ function Info() {
 
       <div className="info__scrollcontainer">
         <h1 className="info__scrolltext" id="text1">
-          LEARN GUITAR THE SMART WAY
+          guit.ar is guitar minus redundancy
         </h1>
       </div>
 
+      <div className="intoduction__page">
+        <h2>What is Guit.ar?</h2>
+        <p>
+          {`  Guit.ar is an AR based webapp which helps beginners to learn guitar.
+          It highlights the strings to be plucked on the guitar in your camera
+          feed so all you have to do is strike the highlighted strings to play
+          your favourite music!`}
+        </p>
+        <p>
+          {`Guit.ar allows you to practice guitar by playing actual songs so that you 
+          can skip the boring parts of learning guitar. Guit.ar aims to make the process
+          of learning basics of guitar not only faster but also more interesting.
+          `}
+        </p>
+        <img src = {LearningExperience}/>
+        <h2>Why Guit.ar?</h2>
+      </div>
+      
       <div className="info__imagelist">
         <ImageContainer color="#F7DF1E" title="Faster Learning" img={speed}>
           <meta
@@ -178,7 +200,7 @@ function Info() {
       <div className="info__stepsconatiner">
         <div className="info__scrollcontainer">
           <h1 className="info__scrolltext" id="text2">
-            guit.ar is guitar minus redundancy
+            LEARN GUITAR THE SMART WAY
           </h1>
         </div>
         <div className="info__steps">

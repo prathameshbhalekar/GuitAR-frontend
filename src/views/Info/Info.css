@@ -29,7 +29,17 @@
   }
 }
 
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .info__topv {
+  animation: 1s ease-out 0s 1 slideInFromTop;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
   background-color: #1db954;
@@ -117,6 +127,19 @@
   position: fixed;
   color: white;
   bottom: 20px;
+  right: 80px;
+  z-index: 10;
+  display: flex;
+  padding: 10px;
+  border-radius: 30px;
+  transition: all 800ms;
+}
+
+.download__button{
+  background-color: rgba(29, 185, 84, 01);
+  position: fixed;
+  color: white;
+  bottom: 20px;
   right: 20px;
   z-index: 10;
   display: flex;
@@ -156,4 +179,27 @@
   width: 135px;
   height: fit-content!important;
   opacity: 1;
+}
+
+.intoduction__page{
+  padding: 50px 12% 0px 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intoduction__page p{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.intoduction__page h2{
+  margin-top: 30px;
+  font-size: 40px;
+  width: 100%;
+}
+
+.intoduction__page img{
+  margin: 30px 0 100px 0;
+  width: 100%;
 }
