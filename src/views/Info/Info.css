@@ -127,7 +127,7 @@
   position: fixed;
   color: white;
   bottom: 20px;
-  left: calc(100vw - 160px);
+  right: 80px;
   z-index: 10;
   display: flex;
   padding: 10px;
@@ -165,10 +165,6 @@
   opacity: 0;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.getstarted__button:hover{
-  left: calc(100vw - 300px);
 }
 
 .getstarted__button:hover h3{
