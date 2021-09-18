@@ -127,7 +127,7 @@
   position: fixed;
   color: white;
   bottom: 20px;
-  right: 80px;
+  left: calc(100vw - 160px);
   z-index: 10;
   display: flex;
   padding: 10px;
@@ -157,28 +157,26 @@
 }
 
 .getstarted__button h3{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.getstarted__button:hover h3{
-  color: white;
-  margin-left: 5px;
-}
-
-.getstarted__button h3{
   width: 0;
   height: 0;
   overflow: hidden;
   white-space: nowrap;
   transition: all 800ms;
   opacity: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.getstarted__button:hover{
+  left: calc(100vw - 300px);
 }
 
 .getstarted__button:hover h3{
   width: 135px;
   height: fit-content!important;
   opacity: 1;
+  color: white;
+  margin-left: 5px;
 }
 
 .intoduction__page{
