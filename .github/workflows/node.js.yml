@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Build And Deploy
+name: Build
 
 on:
   push:
@@ -35,17 +35,3 @@ jobs:
       env:
         CI: false
   
-  deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v2
-      - name: Push to Heroku
-        uses: akhileshns/heroku-deploy@v3.4.6
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "globalguitar"
-          heroku_email: "prathameshbhalekar13@gmail.com"
-
-      - name: Run a one-line script
-        run: echo successfully run
